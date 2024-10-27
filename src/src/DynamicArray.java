@@ -12,5 +12,11 @@ public class DynamicArray
         this.arr = new int[this.capacity];
     }
 
+    // Get value at the i-th index
+    public int get(int i)
+    {
+        return arr[i];
+    }
+
 
 }
