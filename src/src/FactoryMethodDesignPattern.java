@@ -42,15 +42,27 @@ abstract class VehicleFactory
 
 class CarFactory extends VehicleFactory
 {
-
+    @Override
+    Vehicle createVehicle()
+    {
+        return new Car();
+    }
 }
 
 class BikeFactory extends VehicleFactory
 {
-
+    @Override
+    Vehicle createVehicle()
+    {
+        return new Bike();
+    }
 }
 
 class TruckFactory extends VehicleFactory
 {
-
+    @Override
+    Vehicle createVehicle()
+    {
+        return new Truck();
+    }
 }
